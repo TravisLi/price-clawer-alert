@@ -1,0 +1,5 @@
+FROM openjdk:17-alpine
+
+COPY ./target/price-clawer-alert-1.0-SNAPSHOT.jar /deployments/
+
+CMD java -jar /deployments/price-clawer-alert-1.0-SNAPSHOT.jar

@@ -1,0 +1,3 @@
+FROM postgres:latest
+
+COPY ./dbInit/* /docker-entrypoint-initdb.d/
