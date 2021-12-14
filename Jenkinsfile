@@ -6,7 +6,6 @@ pipeline {
                 echo "build stage"
             }
         }
-        
         stage('test') {
             steps {
                 echo "testing stage"
