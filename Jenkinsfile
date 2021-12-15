@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Test') { 
             steps {
-                sh 'mvn docker:start docker:stop test' 
+                sh 'mvn docker:start test docker:stop' 
             }
             post {
                 always {
